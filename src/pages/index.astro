@@ -1,50 +1,70 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout title="DVA Solar Cleaning">
+  <!-- Hero Section -->
+  <header style="background:#0077cc; color:white; padding:40px 20px; text-align:center;">
+    <img src="/logo.png" alt="DVA Solar Cleaning Logo" style="max-width:120px; margin:0 auto 15px auto;" />
+    <h1>DVA Solar Cleaning</h1>
+    <p style="font-style:italic;">Let Your Solar Breathe</p>
+  </header>
+
+  <!-- About Us -->
+  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+    <h2>About Us</h2>
+    <p>My name is <strong>Athar Adnan</strong>, founder of DVA Solar Cleaning. As an entrepreneur, I started this journey with a vision to make solar energy more efficient and sustainable for everyone. I believe clean energy deserves clean care — and that’s why I built this company.</p>
+  </section>
+
+  <!-- Importance of Cleaning -->
+  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+    <h2>Why is Cleaning Solar Important?</h2>
+    <p>Dust, dirt, and pollution can reduce solar panel efficiency by up to 30%. Regular cleaning ensures maximum energy output, longer panel life, and better return on your investment. Clean panels mean clean energy.</p>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Professional, eco-friendly cleaning methods</li>
+      <li>Affordable and transparent pricing</li>
+      <li>Trusted by homeowners and businesses</li>
+      <li>Passionate about renewable energy</li>
+    </ul>
+  </section>
+
+  <!-- Pricing -->
+  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+    <h2>Competitive Pricing</h2>
+    <div style="display:flex; gap:20px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:250px; background:#e6f2ff; padding:20px; border-radius:10px; text-align:center;">
+        <h3>Residential</h3>
+        <p><strong>PKR 200 per panel</strong></p>
+        <p>Perfect for homeowners looking to maximize solar efficiency.</p>
+        <a href="mailto:dvasolarcleaning@gmail.com" style="display:inline-block; margin-top:15px; padding:10px 20px; background:#0077cc; color:white; border-radius:5px; text-decoration:none;">Book Now</a>
+      </div>
+      <div style="flex:1; min-width:250px; background:#e6f2ff; padding:20px; border-radius:10px; text-align:center;">
+        <h3>Industrial</h3>
+        <p><strong>PKR 300 per panel</strong></p>
+        <p>Tailored for factories, warehouses, and large-scale solar installations.</p>
+        <a href="mailto:dvasolarcleaning@gmail.com" style="display:inline-block; margin-top:15px; padding:10px 20px; background:#0077cc; color:white; border-radius:5px; text-decoration:none;">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra Section -->
+  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+    <h2>Our Promise</h2>
+    <p>We don’t just clean panels — we care about your energy future. Our team ensures safety, efficiency, and reliability every time. With DVA Solar Cleaning, you can trust that your investment is in good hands.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:#0077cc; color:white; text-align:center; padding:30px 20px; margin-top:50px;">
+    <h2>Contact Us</h2>
+    <p><strong>Name:</strong> Athar Adnan</p>
+    <p><strong>Phone:</strong> <a href="tel:03705439773" style="color:white;">03705439773</a></p>
+    <p><strong>Email:</strong> <a href="mailto:dvasolarcleaning@gmail.com" style="color:white;">dvasolarcleaning@gmail.com</a></p>
+    <p><strong>Website:</strong> <a href="https://dvasolarcleaning.com" style="color:white;">dvasolarcleaning.com</a></p>
+    <p>&copy; 2025 DVA Solar Cleaning. All rights reserved.</p>
+  </footer>
+</Layout>
