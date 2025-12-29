@@ -3,28 +3,22 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Home">
-  <!-- Hero -->
-  <section style="text-align:center; padding:60px; background:url('/hero.jpg') center/cover; color:white;">
-    <img src="/logo.png" alt="DVA Solar Cleaning Logo" style="max-width:150px; margin-bottom:20px;" />
-    <h2>Professional Solar Panel Cleaning</h2>
-    <p>Boost your energy output with eco‑friendly cleaning services trusted by homeowners and businesses.</p>
-    <a href="/contact" style="display:inline-block; margin-top:20px; padding:12px 25px; background:#0077cc; color:white; border-radius:5px; text-decoration:none;">Book Your Cleaning</a>
+  <!-- Hero Section -->
+  <section style="display:flex; align-items:center; justify-content:space-between; padding:60px; background:url('/hero.jpg') center/cover; color:white;">
+    <div style="flex:1; padding-right:40px;">
+      <h2 style="font-size:2.5em;">Reliable Solar Panel Cleaning</h2>
+      <p style="font-size:1.2em;">Ensuring Maximum Efficiency for Your Solar Energy</p>
+      <a href="/about" style="display:inline-block; margin-top:20px; padding:12px 25px; background:white; color:#0077cc; border-radius:5px; font-weight:bold; text-decoration:none;">Learn More</a>
+    </div>
+    <div style="flex:1;">
+      <img src="/hero.jpg" alt="Solar panel cleaning illustration" style="width:100%; border-radius:10px;" />
+    </div>
   </section>
 
-  <!-- Highlights -->
-  <section style="padding:40px;">
-    <h2>Why Choose Us?</h2>
-    <div style="display:flex; gap:20px; flex-wrap:wrap;">
-      <div style="flex:1; min-width:250px; background:#f0f8ff; padding:20px; border-radius:8px;">
-        <img src="/efficiency.jpg" alt="Clean solar panels" style="width:100%; border-radius:8px;" />
-        <h3>Efficiency</h3>
-        <p>Dirty panels can lose up to 30% efficiency. Our cleaning restores maximum performance.</p>
-      </div>
-      <div style="flex:1; min-width:250px; background:#f0f8ff; padding:20px; border-radius:8px;">
-        <img src="/eco.jpg" alt="Eco-friendly cleaning" style="width:100%; border-radius:8px;" />
-        <h3>Eco‑Friendly</h3>
-        <p>We use safe, water‑based methods that protect your panels and the environment.</p>
-      </div>
-    </div>
+  <!-- About Preview -->
+  <section style="padding:40px; text-align:center;">
+    <h2>About Us</h2>
+    <p style="max-width:700px; margin:auto;">We are dedicated to providing top-notch solar panel cleaning services. Our team uses the latest techniques and equipment to keep your solar panels performing at their best.</p>
+    <a href="/about" style="display:inline-block; margin-top:20px; padding:10px 20px; background:#0077cc; color:white; border-radius:5px; text-decoration:none;">Meet the Team</a>
   </section>
 </Layout>
