@@ -2,28 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="DVA Solar Cleaning">
-  <!-- Hero Section -->
-  <header style="background:#0077cc; color:white; padding:40px 20px; text-align:center;">
-    <img src="/logo.png" alt="DVA Solar Cleaning Logo" style="max-width:120px; margin:0 auto 15px auto;" />
-    <h1>DVA Solar Cleaning</h1>
-    <p style="font-style:italic;">Let Your Solar Breathe</p>
-  </header>
-
+<Layout title="Home">
   <!-- About Us -->
-  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+  <section id="about">
     <h2>About Us</h2>
     <p>My name is <strong>Athar Adnan</strong>, founder of DVA Solar Cleaning. As an entrepreneur, I started this journey with a vision to make solar energy more efficient and sustainable for everyone. I believe clean energy deserves clean care — and that’s why I built this company.</p>
   </section>
 
   <!-- Importance of Cleaning -->
-  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+  <section id="importance">
     <h2>Why is Cleaning Solar Important?</h2>
     <p>Dust, dirt, and pollution can reduce solar panel efficiency by up to 30%. Regular cleaning ensures maximum energy output, longer panel life, and better return on your investment. Clean panels mean clean energy.</p>
   </section>
 
   <!-- Why Choose Us -->
-  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+  <section>
     <h2>Why Choose Us?</h2>
     <ul>
       <li>Professional, eco-friendly cleaning methods</li>
@@ -34,7 +27,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Pricing -->
-  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+  <section id="pricing">
     <h2>Competitive Pricing</h2>
     <div style="display:flex; gap:20px; flex-wrap:wrap;">
       <div style="flex:1; min-width:250px; background:#e6f2ff; padding:20px; border-radius:10px; text-align:center;">
@@ -52,19 +45,18 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Extra Section -->
-  <section style="padding:50px 20px; max-width:1000px; margin:auto;">
+  <!-- Our Promise -->
+  <section>
     <h2>Our Promise</h2>
-    <p>We don’t just clean panels - we care about your energy future. Our team ensures safety, efficiency, and reliability every time. With DVA Solar Cleaning, you can trust that your investment is in good hands.</p>
+    <p>We don’t just clean panels — we care about your energy future. Our team ensures safety, efficiency, and reliability every time. With DVA Solar Cleaning, you can trust that your investment is in good hands.</p>
   </section>
 
-  <!-- Footer -->
-  <footer style="background:#0077cc; color:white; text-align:center; padding:30px 20px; margin-top:50px;">
+  <!-- Contact -->
+  <section id="contact">
     <h2>Contact Us</h2>
     <p><strong>Name:</strong> Athar Adnan</p>
-    <p><strong>Phone:</strong> <a href="tel:03705439773" style="color:white;">03705439773</a></p>
-    <p><strong>Email:</strong> <a href="mailto:dvasolarcleaning@gmail.com" style="color:white;">dvasolarcleaning@gmail.com</a></p>
-    <p><strong>Website:</strong> <a href="https://dvasolarcleaning.com" style="color:white;">dvasolarcleaning.com</a></p>
-    <p>&copy; 2025 DVA Solar Cleaning. All rights reserved.</p>
-  </footer>
+    <p><strong>Phone:</strong> <a href="tel:03705439773">03705439773</a></p>
+    <p><strong>Email:</strong> <a href="mailto:dvasolarcleaning@gmail.com">dvasolarcleaning@gmail.com</a></p>
+    <p><strong>Website:</strong> <a href="https://dvasolarcleaning.com">dvasolarcleaning.com</a></p>
+  </section>
 </Layout>
