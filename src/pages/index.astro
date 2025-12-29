@@ -3,8 +3,9 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Home">
-  <!-- Hero Section -->
-  <section style="text-align:center; padding:60px; background:url('/solar-panels.jpg') center/cover; color:white;">
+  <!-- Hero -->
+  <section style="text-align:center; padding:60px; background:url('/hero.jpg') center/cover; color:white;">
+    <img src="/logo.png" alt="DVA Solar Cleaning Logo" style="max-width:150px; margin-bottom:20px;" />
     <h2>Professional Solar Panel Cleaning</h2>
     <p>Boost your energy output with eco‑friendly cleaning services trusted by homeowners and businesses.</p>
     <a href="/contact" style="display:inline-block; margin-top:20px; padding:12px 25px; background:#0077cc; color:white; border-radius:5px; text-decoration:none;">Book Your Cleaning</a>
@@ -12,19 +13,17 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Highlights -->
   <section style="padding:40px;">
-    <h2>Why Choose DVA Solar Cleaning?</h2>
+    <h2>Why Choose Us?</h2>
     <div style="display:flex; gap:20px; flex-wrap:wrap;">
       <div style="flex:1; min-width:250px; background:#f0f8ff; padding:20px; border-radius:8px;">
+        <img src="/efficiency.jpg" alt="Clean solar panels" style="width:100%; border-radius:8px;" />
         <h3>Efficiency</h3>
         <p>Dirty panels can lose up to 30% efficiency. Our cleaning restores maximum performance.</p>
       </div>
       <div style="flex:1; min-width:250px; background:#f0f8ff; padding:20px; border-radius:8px;">
+        <img src="/eco.jpg" alt="Eco-friendly cleaning" style="width:100%; border-radius:8px;" />
         <h3>Eco‑Friendly</h3>
-        <p>We use water‑based, safe methods that protect your panels and the environment.</p>
-      </div>
-      <div style="flex:1; min-width:250px; background:#f0f8ff; padding:20px; border-radius:8px;">
-        <h3>Trusted Service</h3>
-        <p>Our team is reliable, professional, and passionate about renewable energy.</p>
+        <p>We use safe, water‑based methods that protect your panels and the environment.</p>
       </div>
     </div>
   </section>
