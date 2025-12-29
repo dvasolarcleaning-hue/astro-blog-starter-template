@@ -3,24 +3,27 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="About">
-  <section style="padding:40px;">
-    <h2>Our Story</h2>
-    <p>Founded by <strong>Athar Adnan</strong>, DVA Solar Cleaning was born out of a vision to make solar energy more efficient and sustainable. We believe clean energy deserves clean care.</p>
-    <p>From humble beginnings, we’ve grown into a trusted partner for homeowners and businesses across Pakistan. Our mission is simple: maximize your solar investment through safe, reliable, and eco‑friendly cleaning.</p>
+  <section style="display:flex; align-items:center; gap:20px; padding:40px;">
+    <div style="flex:1;">
+      <h2>Our Story</h2>
+      <p>Founded by Athar Adnan, DVA Solar Cleaning was born out of a vision to make solar energy more efficient and sustainable.</p>
+    </div>
+    <img src="/about1.jpg" alt="Founder working on solar panels" style="flex:1; width:100%; border-radius:8px;" />
   </section>
 
-  <section style="padding:40px;">
-    <h2>Our Values</h2>
-    <ul>
-      <li>Commitment to renewable energy</li>
-      <li>Eco‑friendly cleaning practices</li>
-      <li>Transparency and affordability</li>
-      <li>Customer satisfaction above all</li>
-    </ul>
+  <section style="display:flex; flex-direction:row-reverse; align-items:center; gap:20px; padding:40px;">
+    <div style="flex:1;">
+      <h2>Our Mission</h2>
+      <p>We believe clean energy deserves clean care. Our eco‑friendly methods ensure safety and efficiency.</p>
+    </div>
+    <img src="/about2.jpg" alt="Team cleaning solar panels" style="flex:1; width:100%; border-radius:8px;" />
   </section>
 
-  <section style="padding:40px;">
-    <h2>Meet the Founder</h2>
-    <p>Athar Adnan is an entrepreneur passionate about clean energy. His dedication to professionalism and innovation drives DVA Solar Cleaning forward.</p>
+  <section style="display:flex; align-items:center; gap:20px; padding:40px;">
+    <div style="flex:1;">
+      <h2>Our Values</h2>
+      <p>Transparency, affordability, and customer satisfaction are at the heart of everything we do.</p>
+    </div>
+    <img src="/about3.jpg" alt="Happy customer with solar panels" style="flex:1; width:100%; border-radius:8px;" />
   </section>
 </Layout>
