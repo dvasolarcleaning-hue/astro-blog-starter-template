@@ -22,17 +22,10 @@ const { title } = Astro.props as LayoutProps;
         background-color: #f9f9f9;
         color: #333;
       }
-      a {
-        color: #0077cc;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      header, footer {
-        background-color: #0077cc;
+      header {
+        background: linear-gradient(to right, #0077cc, #005599);
         color: white;
-        padding: 20px;
+        padding: 30px;
         text-align: center;
       }
       nav {
@@ -53,6 +46,13 @@ const { title } = Astro.props as LayoutProps;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
       }
+      footer {
+        background: #0077cc;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
     </style>
   </head>
   <body>
@@ -62,12 +62,11 @@ const { title } = Astro.props as LayoutProps;
       <p style="font-style:italic;">Let Your Solar Breathe</p>
     </header>
 
-    <!-- Navigation Bar -->
     <nav>
-      <a href="#about">About</a>
-      <a href="#importance">Why Clean</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/contact">Contact</a>
     </nav>
 
     <main>
