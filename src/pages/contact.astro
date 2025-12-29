@@ -9,27 +9,41 @@ import Layout from '../layouts/Layout.astro';
     <p>We’re here to help you maximize your solar investment.</p>
   </section>
 
-  <!-- Contact Info -->
-  <section style="padding:40px;">
-    <h2>Contact Information</h2>
-    <p><strong>Name:</strong> Athar Adnan</p>
-    <p><strong>Phone:</strong> <a href="tel:03705439773">03705439773</a></p>
-    <p><strong>Email:</strong> <a href="mailto:dvasolarcleaning@gmail.com">dvasolarcleaning@gmail.com</a></p>
-    <p><strong>Website:</strong> <a href="https://dvasolarcleaning.com">dvasolarcleaning.com</a></p>
-  </section>
+  <!-- Contact Blocks -->
+  <section style="display:flex; gap:20px; flex-wrap:wrap; padding:40px;">
+    <!-- Contact Info Block -->
+    <div style="flex:1; min-width:250px; background:#e6f2ff; padding:20px; border-radius:10px; text-align:center;">
+      <h3>Contact Information</h3>
+      <p>
+        <img src="/phone-icon.png" alt="Phone" width="30" style="vertical-align:middle; margin-right:8px;" />
+        <a href="tel:03705439773">03705439773</a>
+      </p>
+      <p>
+        <img src="/email-icon.png" alt="Email" width="30" style="vertical-align:middle; margin-right:8px;" />
+        <a href="mailto:dvasolarcleaning@gmail.com">dvasolarcleaning@gmail.com</a>
+      </p>
+      <p>
+        <img src="/website-icon.png" alt="Website" width="30" style="vertical-align:middle; margin-right:8px;" />
+        <a href="https://dvasolarcleaning.com">dvasolarcleaning.com</a>
+      </p>
+    </div>
 
-  <!-- Contact Form -->
-  <section style="padding:40px; background:#f0f8ff; border-radius:8px;">
-    <h2>Send Us a Message</h2>
-    <form>
-      <label>Name:<br><input type="text" style="width:100%; padding:8px;"/></label><br><br>
-      <label>Email:<br><input type="email" style="width:100%; padding:8px;"/></label><br><br>
-      <label>Message:<br><textarea style="width:100%; padding:8px;" rows="5"></textarea></label><br><br>
-      <button type="submit" style="padding:10px 20px; background:#0077cc; color:white; border:none; border-radius:5px;">Send</button>
-    </form>
+    <!-- Contact Form Block -->
+    <div style="flex:1; min-width:250px; background:#f0f8ff; padding:20px; border-radius:10px;">
+      <h3>Send Us a Message</h3>
+      <form onsubmit="window.open(`https://wa.me/923705439773?text=Name:%20${this.name.value}%0AEmail:%20${this.email.value}%0AMessage:%20${this.message.value}`); return false;">
+        <label>Name:<br><input type="text" name="name" style="width:100%; padding:8px;" required/></label><br><br>
+        <label>Email:<br><input type="email" name="email" style="width:100%; padding:8px;" required/></label><br><br>
+        <label>Message:<br><textarea name="message" style="width:100%; padding:8px;" rows="5" required></textarea></label><br><br>
+        <button type="submit" style="padding:10px 20px; background:#0077cc; color:white; border:none; border-radius:5px;">Send via WhatsApp</button>
+      </form>
+    </div>
   </section>
 
   <!-- Social Icons -->
   <section style="text-align:center; padding:20px;">
     <a href="https://facebook.com" style="margin:0 10px;"><img src="/facebook-icon.png" alt="Facebook" width="40"/></a>
-    <a href="https://instagram.com" style="margin:0 10px;"><img src="/instagram
+    <a href="https://instagram.com" style="margin:0 10px;"><img src="/instagram-icon.png" alt="Instagram" width="40"/></a>
+    <a href="https://wa.me/923705439773" style="margin:0 10px;"><img src="/whatsapp-icon.png" alt="WhatsApp" width="40"/></a>
+  </section>
+</Layout>
