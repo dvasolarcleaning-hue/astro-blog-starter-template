@@ -3,20 +3,33 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Contact">
-  <section style="padding:40px;">
+  <!-- Banner -->
+  <section style="text-align:center; padding:60px; background:url('/contact-banner.jpg') center/cover; color:white;">
     <h2>Get in Touch</h2>
-    <p>We’d love to hear from you. Whether you’re ready to book or just have questions, reach out today.</p>
+    <p>We’re here to help you maximize your solar investment.</p>
+  </section>
 
+  <!-- Contact Info -->
+  <section style="padding:40px;">
+    <h2>Contact Information</h2>
     <p><strong>Name:</strong> Athar Adnan</p>
     <p><strong>Phone:</strong> <a href="tel:03705439773">03705439773</a></p>
     <p><strong>Email:</strong> <a href="mailto:dvasolarcleaning@gmail.com">dvasolarcleaning@gmail.com</a></p>
     <p><strong>Website:</strong> <a href="https://dvasolarcleaning.com">dvasolarcleaning.com</a></p>
+  </section>
 
-    <form style="margin-top:20px;">
+  <!-- Contact Form -->
+  <section style="padding:40px; background:#f0f8ff; border-radius:8px;">
+    <h2>Send Us a Message</h2>
+    <form>
       <label>Name:<br><input type="text" style="width:100%; padding:8px;"/></label><br><br>
       <label>Email:<br><input type="email" style="width:100%; padding:8px;"/></label><br><br>
       <label>Message:<br><textarea style="width:100%; padding:8px;" rows="5"></textarea></label><br><br>
       <button type="submit" style="padding:10px 20px; background:#0077cc; color:white; border:none; border-radius:5px;">Send</button>
     </form>
   </section>
-</Layout>
+
+  <!-- Social Icons -->
+  <section style="text-align:center; padding:20px;">
+    <a href="https://facebook.com" style="margin:0 10px;"><img src="/facebook-icon.png" alt="Facebook" width="40"/></a>
+    <a href="https://instagram.com" style="margin:0 10px;"><img src="/instagram
