@@ -153,3 +153,37 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+/* Global layout fixes */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Navigation bar */
+nav {
+  background: #005599;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+/* Section content centering */
+section {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
